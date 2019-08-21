@@ -4,7 +4,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        echo 'Suren test Checkout Source'
+        echo 'Suren test Checkout Source From Git'
       }
     }
 
@@ -14,7 +14,6 @@ pipeline {
       }
     }
 
-
     stage('Build image') {
       steps{
         echo 'Suren test Build Image'
@@ -23,16 +22,25 @@ pipeline {
 
     stage('Push Image') {
       steps{
-        echo 'Suren test Push Image'
+        echo 'Suren test Push Image to Harbour'
       }
     }
-
+    stage('Pull Image') {
+      steps{
+        echo 'Suren test Pull Image From Harbour'
+      }
+    }
+    
     stage('Deploy App') {
       steps {
         echo 'Suren test Deploy App'
       }
     }
-    
+    stage('Test App') {
+      steps {
+        echo 'Deployed App to test'
+      }
+    }
     stage('Release') {
       steps {
         echo 'Suren test Release App V1'
