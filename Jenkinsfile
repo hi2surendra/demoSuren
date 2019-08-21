@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Suren test Pipeline'
+        echo 'Suren test Pipeline V2'
       }
     }
   }
