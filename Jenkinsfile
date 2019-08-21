@@ -2,8 +2,7 @@ pipeline {
   agent any
   stages {
 
-
- stage('Checkout Source') {
+    stage('Checkout Source') {
       steps {
         echo 'Suren test Checkout Source'
       }
@@ -30,9 +29,16 @@ pipeline {
 
     stage('Deploy App') {
       steps {
-        echo 'Suren test Push Image'
+        echo 'Suren test Deploy App'
       }
     }
+    
+    stage('Release') {
+      steps {
+        echo 'Suren test Release App V1'
+      }
+    }
+    
   }
 }
 
