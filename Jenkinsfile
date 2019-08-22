@@ -43,7 +43,7 @@ pipeline {
     }
     stage('Release') {
       steps {
-        echo 'Suren test Release App V1'
+        echo 'Suren test Release App V2'
       }
     }
     
