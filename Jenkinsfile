@@ -36,7 +36,7 @@ pipeline {
         echo 'Suren test Deploy App'
       }
     }
-    stage('Test App') {
+    stage('Test App V3'){
       steps {
         echo 'Deployed App to test'
       }
